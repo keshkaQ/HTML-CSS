@@ -1,0 +1,128 @@
+.background_color {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto; 
+  padding: 0 20px;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  display: table;
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  display: table-row;
+  background: green;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: table-cell;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+
+.menu-caret {
+  position: relative;
+}
+
+.menu-caret > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: green;
+  width: 100%;
+}
+
+.menu-caret .menu-caret > ul {
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+
+.menu-caret > ul li {
+  display: block;
+  padding: 10px;
+}
+
+.menu-caret:hover > ul {
+  display: block;
+}
+
+.menu li:hover {
+  background: darkgreen;
+}
+
+.card {
+  font-size: 14px;
+  height: 250px;
+  width: 135px;
+  text-align: center;
+}
+
+.card img {
+  width: 100px;
+  height: 180px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.card div {
+  margin-top: 10px;
+  font-weight: bold;
+  min-height: 40px;
+}
+
+.writers-nav {
+  position: sticky;
+  top: 0;
+  background-color: brown;
+  display: table;
+  width: 100%;
+}
+
+.writers-nav li:hover
+{
+  background-color: darkred;
+}
+
+.writers-nav ul {
+  display: table-row;
+  text-align: center;
+  color: white;
+  margin: 0;
+  height: 50px; 
+  padding: 0;
+}
+
+.writers-nav li {
+  display: table-cell;
+  padding: 15px;
+}
+
+.aside_style{
+  width: 250px;
+  height: 450px;
+  float: right;
+  margin: 0 0 20px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
