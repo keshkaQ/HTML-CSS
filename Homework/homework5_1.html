@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Order - Sushi Delivery</title>
+    <link href="styles/styles_hw5_1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Create Order</h1>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="formGroup">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="formGroup">
+              <label for="address">Delivery Address *</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Street, House, Apartment"
+                required
+              />
+            </div>
+
+            <div class="formGroup">
+              <label for="email">Email Address *</label>
+              <input type="email" name="email" id="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="formGroup">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" name="phone" id="phone" placeholder="+7 (XXX) XXX-XX-XX" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Order Details</legend>
+            <div class="formGroup">
+              <label for="sticks-type">Type of sticks</label>
+              <select name="sticks_type" id="sticks-type" class="custom-select">
+                <option value="regular">Regular</option>
+                <option value="educational">Educational</option>
+                <option value="none">No sticks needed</option>
+              </select>
+            </div>
+
+            <div class="formGroup">
+              <label for="sticks-count">Count of stick pairs</label>
+              <select name="sticks_count" id="sticks-count" class="custom-select">
+                <option value="1">1 pair</option>
+                <option value="2">2 pairs</option>
+                <option value="3">3 pairs</option>
+                <option value="4">4 pairs</option>
+                <option value="5">5 pairs</option>
+                <option value="6">6 pairs</option>
+              </select>
+            </div>
+
+            <div class="formGroup">
+              <label for="sushi-selection">Sushi Selection *</label>
+              <select
+                name="sushi"
+                id="sushi-selection"
+                class="custom-select"
+                multiple
+                size="4"
+                required
+              >
+                <optgroup label="Classic Rolls">
+                  <option value="california">California Roll - 350₽</option>
+                  <option value="philadelphia">Philadelphia Roll - 380₽</option>
+                  <option value="dragon">Dragon Roll - 420₽</option>
+                </optgroup>
+                <optgroup label="Special Rolls">
+                  <option value="spicy_tuna">Spicy Tuna Roll - 400₽</option>
+                  <option value="rainbow">Rainbow Roll - 450₽</option>
+                  <option value="tempura">Tempura Roll - 390₽</option>
+                </optgroup>
+                <optgroup label="Sets">
+                  <option value="set_small">Small Set (8 pieces) - 600₽</option>
+                  <option value="set_medium">Medium Set (16 pieces) - 1100₽</option>
+                  <option value="set_large">Large Set (24 pieces) - 1500₽</option>
+                </optgroup>
+              </select>
+              <small>Hold Ctrl to select multiple items</small>
+            </div>
+
+            <div class="formGroup">
+              <label for="sauce">Sauce Selection</label>
+              <select name="sauce" id="sauce" class="custom-select">
+                <option value="soy">Soy Sauce</option>
+                <option value="teriyaki">Teriyaki Sauce</option>
+                <option value="spicy_mayo">Spicy Mayo</option>
+                <option value="unagi">Unagi Sauce</option>
+                <option value="none">No sauce</option>
+              </select>
+            </div>
+
+            <div class="formGroup">
+              <label for="quantity">Quantity</label>
+              <input type="number" name="quantity" id="quantity" min="1" max="10" value="1" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Options</legend>
+            <div class="checkBox">
+              <input type="checkbox" name="napkins" id="napkins" />
+              <label for="napkins">Include napkins</label>
+            </div>
+
+            <div class="checkBox">
+              <input type="checkbox" name="wasabi" id="wasabi" checked />
+              <label for="wasabi">Include wasabi</label>
+            </div>
+
+            <div class="checkBox">
+              <input type="checkbox" name="ginger" id="ginger" checked />
+              <label for="ginger">Include ginger</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery Time</legend>
+            <div class="formGroup">
+              <label for="delivery_time">Preferred Delivery Time</label>
+              <input type="datetime-local" name="delivery_time" id="delivery_time" required />
+            </div>
+
+            <div class="formGroup">
+              <label for="urgency">Delivery Urgency</label>
+              <select name="urgency" id="urgency" class="custom-select">
+                <option value="standard">Standard (60-90 min)</option>
+                <option value="express">Express (30-45 min) +200₽</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+            <div class="formGroup">
+              <label for="comments">Special Instructions</label>
+              <textarea
+                name="comments"
+                id="comments"
+                placeholder="Any allergies, dietary restrictions, or delivery instructions..."
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div class="checkBox">
+              <input type="checkbox" name="newsletter" id="newsletter" />
+              <label for="newsletter">Subscribe to newsletter for special offers</label>
+            </div>
+
+            <div class="checkBox">
+              <input type="checkbox" name="terms" id="terms" required />
+              <label for="terms">I agree with terms and conditions *</label>
+            </div>
+          </fieldset>
+
+          <div class="btns">
+            <button type="submit" class="create">Create Order</button>
+            <button type="reset" class="reset">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

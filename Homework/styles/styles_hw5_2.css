@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../images/background_task2.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.form{
+    width: 450px;
+    height: 620px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 30px black;
+}
+ h1{
+    margin: 20px 30px 30px 10px;
+    text-align: center;
+    color:white;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 550;
+}
+.formGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formGroup input,
+.custom-select {
+    border: none;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+}
+
+::placeholder{
+    color:white;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid darkseagreen;
+    font-size: 17px;
+    font-weight: bold;
+}
+ .checkBox{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0px 20px 30px 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.checkBox:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+#checkBox{ 
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    accent-color: #4CAF50;
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    font-size: 14px;
+}
+
+.btn{
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgba(28, 131, 28);
+    color:whitesmoke;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: rgb(23, 88, 23, 0.5);
+}
+
+.custom-select option {
+    background-color: rgba(30, 39, 39, 0.9);
+    color: white;
+}
+
+.custom-select:focus {
+    border-bottom: 2px solid darkseagreen;
+}

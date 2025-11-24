@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  line-height: 1.6;
+  background-image: url(/images/sushi_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #555;
+  padding: 0 10px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+input[type='datetime-local'],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkBox input {
+  margin-right: 10px;
+}
+
+.checkBox label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+small {
+  color: #666;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.create:hover {
+  background-color: darkgreen;
+}
+
+.reset {
+  background-color: #6c757d;
+}
+
+.reset {
+  background-color: #5a6268;
+}
+
+optgroup {
+  font-weight: bold;
+  color: #333;
+  background-color: white;
+}
+
+option {
+  padding: 8px 12px;
+  border-bottom: 3px solid #eee;
+}
+
+option:checked {
+  background-color: #4caf50;
+  color: white;
+}
+
+select[multiple] optgroup option {
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
