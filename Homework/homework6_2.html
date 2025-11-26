@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 2</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      footer {
+        background-color: rgb(65, 89, 156);
+        width: 900px;
+        height: 220px;
+        position: relative;
+      }
+      .lists-container {
+        padding-top: 40px;
+        height: 120px;
+      }
+      ul {
+        position: absolute;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul:first-child {
+        left: 100px;
+      }
+      ul:nth-child(2) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      ul:last-child {
+        right: 100px;
+        font-size: 35px;
+        display: flex;
+        border: none;
+        gap: 25px;
+        margin-top: 35px;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+      hr {
+        width: 90%;
+      }
+      p {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .fa-facebook:hover {
+        color: #1877f2;
+        background-color: white;
+      }
+      .fa-instagram:hover {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+      }
+      .fa-youtube:hover {
+        color: #ff0000;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="lists-container">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Gallery</li>
+          <li>News</li>
+        </ul>
+        <ul>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contacts</li>
+          <li>Privacy & cookies</li>
+        </ul>
+        <ul>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+      <hr />
+      <p>Copyright &copy Company 2018-2019</p>
+    </footer>
+  </body>
+</html>

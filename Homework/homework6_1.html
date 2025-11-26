@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 1</title>
+    <style>
+      body {
+        padding: 10px;
+        max-width: 1200px;
+        box-sizing: border-box;
+        background-color: rgb(233, 226, 226);
+        color: white;
+      }
+      .header {
+        font-size: 20px;
+        padding: 20px 45px;
+        color: white;
+        background-color: rgb(146, 18, 18);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      menu {
+        background-color: rgb(90, 11, 11);
+        display: flex;
+        padding: 20px 45px;
+        list-style-type: none;
+        gap: 45px;
+      }
+      menu li button {
+        margin: 0;
+        font-size: 20px;
+        color: white;
+        background: transparent;
+        border: none;
+      }
+      main {
+        padding: 20px 45px 40px;
+        height: 350px;
+        background-color: rgb(151, 48, 79);
+        overflow: hidden;
+      }
+      section {
+        margin: 20px;
+        background-color: rgb(167, 134, 136);
+        padding: 30px;
+      }
+      footer {
+        background-color: rgb(90, 11, 11);
+        font-size: 12px;
+        margin-top: 20px;
+        padding: 20px 45px;
+      }
+      .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        float: left;
+        margin-right: 20px;
+      }
+
+      aside {
+        background-color: rgb(90, 11, 11);
+        padding: 20px 45px;
+        margin-bottom: 20px;
+      }
+      .sidebar-container + aside {
+        display: flex;
+        float: right;
+        margin-left: 20px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <header>Header</header>
+    </div>
+    <menu>
+      <li><button>Главная</button></li>
+      <li><button>Проекты</button></li>
+      <li><button>О нас</button></li>
+      <li><button>Реклама</button></li>
+    </menu>
+    <div class="sidebar-container">
+      <aside>
+        <h2>ASIDE 1</h2>
+      </aside>
+      <aside class="aside2" style="height: 150px">
+        <h2>ASIDE 2</h2>
+      </aside>
+    </div>
+    <aside>
+      <h2>ASIDE 3</h2>
+    </aside>
+    <main>
+      <h2>MAIN CONTENT</h2>
+      <section>
+        <h2>SECTION 1</h2>
+      </section>
+      <section>
+        <h2>SECTION 2</h2>
+      </section>
+    </main>
+    <footer>
+      <h2>FOOTER</h2>
+    </footer>
+  </body>
+</html>
