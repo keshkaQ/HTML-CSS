@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tahoma', Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c8102e 0%, #000000 100%);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  background-color: white;
+}
+
+header {
+  background: linear-gradient(90deg, #c8102e 0%, #000000 100%);
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.main-nav {
+  background-color: #000000;
+}
+
+.main-nav nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: #c8102e;
+}
+
+.position-section {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #c8102e;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c8102e;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  border: 2px solid #c8102e;
+  border-radius: 10px;
+  width: 250px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.country-flag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #c8102e;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(200, 16, 46, 0.3);
+}
+
+.image-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .player-image {
+  transform: scale(1.05);
+}
+
+.player-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.player-number {
+  font-size: 48px;
+  color: #c8102e;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  margin-top: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Медиа-запросы для страницы состава команды */
+@media (max-width: 1024px) {
+  .position-section {
+    padding: 0 15px;
+    margin: 25px 0;
+  }
+
+  .cards-container {
+    gap: 15px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .image-container {
+    height: 240px;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  header {
+    padding: 15px 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .main-nav nav {
+    flex-direction: column;
+  }
+
+  .main-nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  main {
+    padding: 15px;
+  }
+
+  .position-section {
+    padding: 0 10px;
+    margin: 20px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+  }
+
+  .cards-container {
+    gap: 15px;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+    min-width: 160px;
+  }
+
+  .image-container {
+    height: 200px;
+  }
+
+  .player-name {
+    font-size: 18px;
+  }
+
+  .player-number {
+    font-size: 36px;
+  }
+
+  footer {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  .container {
+    border-radius: 6px;
+  }
+
+  header {
+    padding: 12px 8px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .main-nav a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  .position-section {
+    padding: 0 5px;
+    margin: 15px 0;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+  }
+
+  .cards-container {
+    gap: 12px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .image-container {
+    height: 180px;
+  }
+
+  .player-name {
+    font-size: 16px;
+  }
+
+  .player-number {
+    font-size: 32px;
+  }
+
+  .player-info {
+    padding: 12px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);
+  }
+
+  footer {
+    padding: 12px 8px;
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
